@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/list.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Country Details</title>
+</head>
+<body>
+    <a  href="{% url 'index' %}" class="home">HOME</a>
+    <h1 class="head1"><i>CITIES</i></h1> 
+    <br>
+    <br>
+    <div class="container">
+        <h2><i>List of cities under state <strong> Meghalaya</strong></i></h2>
+    </div>
+    <br>
+    <div class="container">
+        <div class=row>
+            <div class="col-mod-4">
+                <img src="{% static 'css/images/mega/shillong.png' %}" alt="" width="220px", height="140px;" style="border:2px solid white;">
+                <h6 class="d2">{{ dict7.1 }}</h6>
+                <!-- <a href="#" class="a1">{{ dict1.1 }}</a> -->
+            </div>
+            <div class="col-mod-4">
+                <img src="{% static 'css/images/mega/Nongstoin.png' %}" alt="" width="220px", height="140px;" style="border:2px solid white;">
+                <h6 class="b1">{{ dict7.2 }}</h6>
+            </div>
+            <div class="col-mod-4">
+                <img src="{% static 'css/images/mega/Nongpoh.png' %}" alt="" width="220px", height="140px;" style="border:2px solid white;">
+                <h6 class="a3">{{ dict7.3 }}</h6>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class=row>
+            <div class="col-mod-6">
+                <img src="{% static 'css/images/mega/shillong.png' %}" alt="" width="220px", height="140px;" style="border:2px solid white;">
+                <h6 class="d1">{{ dict7.4 }}</h6>
+            </div>
+            <div class="col-mod-6">
+                <img src="{% static 'css/images/mega/Nongstoin.png' %}" alt="" width="220px", height="140px;" style="border:2px solid white;">
+                <h6 class="d2">{{ dict7.5 }}</h6>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+</body>
+</html>

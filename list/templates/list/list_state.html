@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/list.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Country Details</title>
+</head>
+<body>
+    <a  href="{% url 'index' %}" class="home">HOME</a>
+    <h1 class="head1"><i>STATES_INDIA</i></h1> 
+    <br>
+
+    <br>
+    <br>
+    <div class="container">
+        <h1 class="head3"><i>{{ context }}</i></h1>
+        <br>
+        <br>
+    </div>
+    <div class="container">
+        <div class=row>
+            <div class="col-mod-3">
+                <img src="{% static 'css/images/andhra.png' %}" alt="{{ dict.1 }}" width="220px", height="140px;" style="border:2px solid white;">
+                <a href="{% url 'city' %}" class="s1">{{ dict.1 }}</a>
+            </div>
+            <div class="col-mod-3">
+                <img src="{% static 'css/images/goa.png' %}" alt="{{ dict.2 }}" width="220px", height="140px;" style="border:2px solid white;">
+                <a href="{% url 'city1' %}" class="s2">{{ dict.2 }}</a>
+            </div>
+            <div class="col-mod-3">
+                <img src="{% static 'css/images/himachal.png' %}" alt="{{ dict.3 }}" width="220px", height="140px;" style="border:2px solid white;">
+                <a href="{% url 'city2' %}" class="s3">{{ dict.3 }}</a>
+                </div>
+            <div class="col-mod-3">
+                <img src="{% static 'css/images/karnataka.png' %}" alt="{{ dict.4 }}" width="220px", height="140px;" style="border:2px solid white;">
+                <a href="{% url 'city3' %}" class="s4">{{ dict.4 }}</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class=row>
+            <div class="col-mod-3">
+                <img src="{% static 'css/images/kerala.png' %}" alt="{{ dict.5 }}" width="220px", height="140px;" style="border:2px solid white;">
+                <a href="{% url 'city4' %}" class="s5">{{ dict.5 }}</a>
+            </div>
+            <div class="col-mod-3">
+                <img src="{% static 'css/images/maha.png' %}" alt="{{ dict.6 }}" width="220px", height="140px;" style="border:2px solid white;">
+                <a href="{% url 'city5' %}" class="s6">{{ dict.6 }}</a>
+            </div>
+            <div class="col-mod-3">
+                <img src="{% static 'css/images/mega.png' %}" alt="{{ dict.7 }}" width="220px", height="140px;" style="border:2px solid white;">
+                <a href="{% url 'city6' %}" class="s7">{{ dict.7 }}</a>
+            </div>
+            <div class="col-mod-3">
+                <img src="{% static 'css/images/rajas.png' %}" alt="{{ dict.8 }}" width="220px", height="140px;" style="border:2px solid white;">
+                <a href="{% url 'city7' %}" class="s8">{{ dict.8 }}</a>
+                </div>
+          
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class=row>
+            <div class="col-mod-3">
+                <img src="{% static 'css/images/sikkim.png' %}" alt="{{ dict.9 }}" width="220px", height="140px;" style="border:2px solid white;margin-left:140px;">
+                <a href="{% url 'city8' %}" class="s9">{{ dict.9 }}</a>
+            </div>
+            <div class="col-mod-3">
+                <img src="{% static 'css/images/up.png' %}" alt="{{ dict.10 }}" width="220px", height="140px;" style="border:2px solid white; margin-left:220px;">
+                <a href="{% url 'city9' %}" class="s10">{{ dict.10 }}</a>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+
+    
+</body>
+</html>

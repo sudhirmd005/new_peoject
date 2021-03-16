@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/list.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Country Details</title>
+</head>
+<body>
+    <!-- <div class="container-fluid"style="margin-top:50px; margin-left:40px;">
+        <div class=row>
+            <div class='col-mid-3'>
+                <h1>Country Deatils</h1>
+            </div>
+            <div class='col-mid-6'style="margin-left:800px; font-size:0.6cm;margin-top:17px;">
+               
+            </div>
+        </div>
+    </div> -->
+    <a  href="{% url 'index' %}" class="home">HOME</a>
+    <h1 class="head1"><i>Nation</i></h1> 
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <p class="para">A country/Nation is a distinct territorial body or political entity. It is often referred to as the land of an individual's birth, residence or citizenship.
+            A country may be an independent sovereign state or part of a larger state, as a non-sovereign or formerly sovereign political division, a physical territory with a government, or a geographic region associated with sets of previously independent or differently associated people with distinct political characteristics. It is not inherently sovereign.
+            Countries can refer both to sovereign states and to other political entities, while other times it can refer only to states. For example, the CIA World Factbook uses the word in its "Country name" field to refer to "a wide variety of dependencies, areas of special sovereignty, uninhabited islands, and other entities in addition to the traditional countries or independent states"
+            This website displays 10 <i><strong>countries/Nation</strong></i> which are listed below.
+            Each country has it's own policy, culture, heritage, music and art.
+        </p>
+    </div>
+    
+    <div class="container">
+        <div class=row>
+            <div class="col-mod-4">
+                <img src="{% static 'css/images/usa.png' %}" alt="United states" width="200px", height="150px;" style="border:5px solid white;">
+                <a href="{% url 'work' %}" class='c1'>United states</a>
+            </div>
+            <div class="col-mod-4">
+                <img src="{% static 'css/images/United_Kingdom.png' %}" alt="United Kingdom" width="200px", height="150px;" style="border:5px solid white;">
+                <a href="{% url 'work' %}" class='c2'>United Kingdom</a>
+            </div>
+            <div class="col-mod-4">
+                <img src="{% static 'css/images/France.png' %}" alt="France" width="200px", height="150px;" style="border:5px solid white;">
+                <a href="{% url 'work' %}" class='c3'>France</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class=row>
+            <div class="col-mod-4">
+                <img src="{% static 'css/images/india.png' %}" alt="India" width="200px", height="150px;" style="border:5px solid white;">
+                <a href="{% url 'states' %}" class='c4'>India</a>
+            </div>
+            <div class="col-mod-4">
+                <img src="{% static 'css/images/spain.png' %}" alt="Spain" width="200px", height="150px;" style="border:5px solid white;">
+                <a href="{% url 'work' %}" class='c5'>Spain</a>
+            </div>
+            <div class="col-mod-4">
+                <img src="{% static 'css/images/japan.png' %}" alt="Japan" width="200px", height="150px;" style="border:5px solid white;">
+                <a href="{% url 'work' %}" class='c6'>Japan</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class=row>
+            <div class="col-mod-4">
+                <img src="{% static 'css/images/switzerland.png' %}" alt="Switzerland" width="200px", height="150px;" style="border:5px solid white;">
+                <a href="{% url 'work' %}" class='c7'>Switzerland</a>
+            </div>
+            <div class="col-mod-4">
+                <img src="{% static 'css/images/canada.png' %}" alt="Canada" width="200px", height="150px;" style="border:5px solid white;">
+                <a href="{% url 'work' %}" class='c8'>Canada</a>
+            </div>
+            <div class="col-mod-4">
+                <img src="{% static 'css/images/germany.png' %}" alt="Germany" width="200px", height="150px;" style="border:5px solid white;">
+                <a href="{% url 'work' %}" class='c9'>Germany</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class=row>
+            <div class="col-mod-4">
+                <img src="{% static 'css/images/australia.png' %}" alt="" width="200px", height="150px;" style="margin-left: 320px; border:5px solid white;" >
+                <a href="{% url 'work' %}" class='c10'>Australia</a>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
